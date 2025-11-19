@@ -2,18 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForLoop : MonoBehaviour
+public class WhileLoop : MonoBehaviour
 {
-     public int numEnemies = 3;
+    public int cupsInTheSink = 4;
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 1; i < numEnemies; i++)
-        {
-            Debug.Log("Creating enemy number: " + i);
-        }
+        while (cupsInTheSink > 0)
+            Debug.Log(" I've washed a cup!");
     }
-
 
     // Update is called once per frame
     void Update()
