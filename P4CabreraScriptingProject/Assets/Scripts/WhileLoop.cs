@@ -9,7 +9,11 @@ public class WhileLoop : MonoBehaviour
     void Start()
     {
         while (cupsInTheSink > 0)
+        {
             Debug.Log(" I've washed a cup!");
+            cupsInTheSink--;
+        }
+            
     }
 
     // Update is called once per frame
